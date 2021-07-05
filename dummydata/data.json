@@ -1,0 +1,19 @@
+{
+     "post1":{
+         "topic":"This is post 1",
+         "subject": "Still on post 1",
+         "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Ja_Rule_in_2016.jpg/220px-Ja_Rule_in_2016.jpg"
+     },
+     "post2":{
+        "topic":"This is post 2",
+        "subject": "Still on post 2",
+        "img":"https://theshaderoom.com/wp-content/uploads/2019/07/1160921924-681x1024.jpg"
+    } ,
+    "post3":{
+       "topic":"This is post 3",
+       "subject": "Still on post 3",
+       "img":"https://smartcdn.prod.postmedia.digital/nationalpost/wp-content/uploads/2013/10/jarule.jpg?quality=90&strip=all&w=564&type=webp"
+   } 
+
+
+}

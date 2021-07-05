@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Zen+Dots&display=swap');
+
+.nav_nav{
+    background-color: #14213D;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+     
+}
+
+.nav_menu1{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    
+}
+
+.nav_menu2{
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 15px;
+
+}
+
+.nav_menu2:hover{
+    background-color: #233a6c;
+}
+
+.nav_logo{
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Capriola', sans-serif;
+
+}
+.nav_next{
+    color: #fca311;
+    font-family: 'Zen Dots', cursive;
+    font-size: 22px;
+
+}
