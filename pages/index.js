@@ -5,17 +5,11 @@ import styles from "../styles/Home.module.css";
 import data from "../dummydata/data.json";
 import { converttoarr } from "./functions/converttoarr";
 import Navbar from "./components/Navbar/Navbar";
-import Blogbody from "./components/Blogbody";
+import Blogbody from "./components/Blogbody/Blogbody";
 import Footer from "./components/Footer";
 
-export default function Home() {
-  const [dd, setdd] = useState([]);
-  useEffect(() => {
-    const arr = converttoarr(data);
-
-    setdd(arr);
-  }, []);
-
+export default function Home({ db }) {
+  useEffect(() => {}, []);
   return (
     <div>
       <Head>
@@ -27,11 +21,20 @@ export default function Home() {
         <Navbar />
       </div>
       <div>
-        <Blogbody />
+        <Blogbody db={converttoarr(db)} />
       </div>
       <div>
         <Footer />
       </div>
     </div>
   );
+}
+
+export async function getServerSideProps() {
+  const arr = converttoarr(data);
+  return {
+    props: {
+      db: data,
+    },
+  };
 }

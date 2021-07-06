@@ -6,6 +6,7 @@
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
      
 }
 
@@ -19,9 +20,14 @@
 .nav_menu2{
     margin-left: 10px;
     margin-right: 10px;
-    cursor: pointer;
+    cursor: pointer; 
     padding: 10px;
-    border-radius: 15px;
+    align-items: center; 
+    border-radius: 15px; 
+margin-top: 4px;
+
+}
+.nav_menu_text{
 
 }
 
@@ -33,6 +39,7 @@
     padding: 10px;
     font-size: 18px;
     font-family: 'Capriola', sans-serif;
+    cursor: pointer;
 
 }
 .nav_next{

@@ -1,0 +1,36 @@
+.bb_main{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 15px;
+
+}
+.bb_firstpane{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;  
+    
+}
+
+.bb_btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bb_indbtns{
+    margin-left: 10px;
+
+}
+
+.bb_sdfirstpane{
+    margin-bottom: 10px;
+}
+
+.selectsd{
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;  
+}
