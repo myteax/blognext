@@ -3,10 +3,10 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import data from "../dummydata/data.json";
-import { converttoarr } from "./functions/converttoarr";
-import Navbar from "./components/Navbar/Navbar";
-import Blogbody from "./components/Blogbody/Blogbody";
-import Footer from "./components/Footer";
+import { converttoarr } from "../functions/converttoarr";
+import Navbar from "../components/Navbar/Navbar";
+import Blogbody from "../components/Blogbody/Blogbody";
+import Footer from "../components/Footer/Footer";
 
 export default function Home({ db }) {
   useEffect(() => {}, []);

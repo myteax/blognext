@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 
-function Index({ color, text, size }) {
+function Index({ color, text, size, onClick }) {
   const [colorx, setcolorx] = useState("#fca311");
   const [textx, settextx] = useState("Empty Button");
   const [sizex, setsizex] = useState("12px");
@@ -29,7 +29,7 @@ function Index({ color, text, size }) {
 
   return (
     <div className={classes.root}>
-      <Button variant="contained" className={classes.btnc}>
+      <Button variant="contained" className={classes.btnc} onClick={onClick}>
         {text}
       </Button>
     </div>

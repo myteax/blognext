@@ -6,8 +6,10 @@ import CreateIcon from "@material-ui/icons/Create";
 import LowPriorityIcon from "@material-ui/icons/LowPriority";
 import ListIcon from "@material-ui/icons/List";
 import Selectx from "../../utils/Select/Selectx";
+import Selecty from "../../utils/Select/Selecty";
+import Link from "next/link";
 import Cardsx from "../../utils/Cards/Cardsx";
-import data from "../../../dummydata/data.json";
+import data from "../../dummydata/data.json";
 import { converttoarr } from "../../functions/converttoarr";
 
 const useStyles = makeStyles((theme) => ({
@@ -30,22 +32,26 @@ export default function Blogbody({ db }) {
       setsd(false);
     }
   }, []);
+
+  const newp = () => {
+    location.href = "/newpost";
+  };
   return (
     <div className={styles.bb_main}>
       <div className={sd ? styles.bb_sdfirstpane : styles.bb_firstpane}>
         {sd ? null : (
           <div>
             {" "}
-            <Selectx />{" "}
+            <Selecty />{" "}
           </div>
         )}
 
         <div className={styles.bb_btns}>
           <div className={styles.bb_indbtns}>
-            {" "}
             <Buttonx
               text={sd ? <CreateIcon fontSize="small" /> : "New post"}
-            />{" "}
+              onClick={newp}
+            />
           </div>
           <div className={styles.bb_indbtns}>
             <Buttonx
@@ -63,7 +69,7 @@ export default function Blogbody({ db }) {
       {sd && (
         <div className={styles.selectsd}>
           {" "}
-          <Selectx />{" "}
+          <Selecty />{" "}
         </div>
       )}
       <div className={styles.bb_body}>

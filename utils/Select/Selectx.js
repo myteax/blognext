@@ -5,7 +5,7 @@ import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 
-function Selectx() {
+function Selectx({ width }) {
   const [age, setAge] = React.useState("");
   const [sd, setsd] = useState(false);
   const [wd, setwd] = useState(0);
@@ -26,10 +26,7 @@ function Selectx() {
     },
     selectcss: {
       height: "40px",
-      width: "200px",
-    },
-    inputcss: {
-      // marginTop: "-10px",
+      width: `${width || "200px"}`,
     },
   }));
 
@@ -42,10 +39,7 @@ function Selectx() {
   return (
     <div style={{ width: "200px" }}>
       {/* <FormControl variant="outlined" className={classes.formControl}> */}
-      <InputLabel
-        id="demo-simple-select-outlined-label"
-        className={classes.inputcss}
-      >
+      <InputLabel id="demo-simple-select-outlined-label">
         Select Category
       </InputLabel>
       <Select
